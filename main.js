@@ -52,8 +52,11 @@ const templateElement = document.getElementById("templateHB");
 
 const templateSource = templateElement.innerHTML;
 
+// Aggregation of the templateHB + boilerplate innerhtml
 const template = Handlebars.compile(templateSource);
 
+// context is the object being used.
 const compiledHtml = template(context);
 
+// ID "information" Is where the information will be displayed.
 document.getElementById("information").innerHTML = compiledHtml;
