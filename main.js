@@ -58,5 +58,5 @@ const template = Handlebars.compile(templateSource);
 // context is the object being used.
 const compiledHtml = template(context);
 
-// ID "information" Is where the information will be displayed.
+// ID "information" Is where the information will be displayed..
 document.getElementById("information").innerHTML = compiledHtml;
